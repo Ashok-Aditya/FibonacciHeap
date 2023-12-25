@@ -2,7 +2,6 @@
 # Implemented from https://www.programiz.com/dsa/fibonacci-heap
 
 import math
-import random
 
 
 # Creating fibonacci tree
@@ -83,7 +82,7 @@ def floor_log(x):
     return math.frexp(x)[1] - 1
 
 
-fibonacci_heap = FibonacciHeap()
+# fibonacci_heap = FibonacciHeap()
 #
 # fibonacci_heap.insert_node(7)
 # fibonacci_heap.insert_node(3)
@@ -93,19 +92,20 @@ fibonacci_heap = FibonacciHeap()
 # print('the minimum value of the fibonacci heap: {}'.format(fibonacci_heap.get_min()))
 #
 # print('the minimum value removed: {}'.format(fibonacci_heap.extract_min()))
-
-added = {0}
-for i in range(25):
-    n = 0
-    while n in added:
-        n = random.randint(1, 100)
-    fibonacci_heap.insert_node(n)
-    added.add(n)
-
-print('the minimum value of the fibonacci heap: {}'.format(fibonacci_heap.get_min()))
-for i in range(10):
-    print('the minimum value removed: {}'.format(fibonacci_heap.extract_min()))
-    print(len(fibonacci_heap.trees))
-print('the minimum value of the fibonacci heap: {}'.format(fibonacci_heap.get_min()))
-
-print(sorted(added)[:11])
+#
+# import random
+# added = {0}
+# for i in range(25):
+#     n = 0
+#     while n in added:
+#         n = random.randint(1, 100)
+#     fibonacci_heap.insert_node(n)
+#     added.add(n)
+#
+# print('the minimum value of the fibonacci heap: {}'.format(fibonacci_heap.get_min()))
+# for i in range(10):
+#     print('the minimum value removed: {}'.format(fibonacci_heap.extract_min()))
+#     print(len(fibonacci_heap.trees))
+# print('the minimum value of the fibonacci heap: {}'.format(fibonacci_heap.get_min()))
+#
+# print(sorted(added)[:11])
