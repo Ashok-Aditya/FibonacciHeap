@@ -24,6 +24,12 @@ class FibonacciHeap:
         self.least = None
         self.count = 0
 
+    # Check if heap is empty
+    def empty(self):
+        if self.count == 0:
+            return True
+        return False
+
     # Insert a node
     def insert_node(self, value):
         new_tree = FibonacciTree(value)
@@ -108,4 +114,4 @@ def floor_log(x):
 #     print(len(fibonacci_heap.trees))
 # print('the minimum value of the fibonacci heap: {}'.format(fibonacci_heap.get_min()))
 #
-# print(sorted(added)[:11])
+# print(sorted(added)[1:12])
