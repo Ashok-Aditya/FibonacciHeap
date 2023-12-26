@@ -1,4 +1,4 @@
-from FibonacciHeap import FibonacciHeap
+from fibonacci_heap import FibonacciHeap
 
 
 def test_f_heap():
